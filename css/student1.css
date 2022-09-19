@@ -10,7 +10,7 @@ h1,h2, h3 {
   
 }
 
-ul li {
+nav ul li {
     margin: 5%;
     width: 50%;
     border: solid 1px black;
@@ -33,4 +33,22 @@ p {
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
     color: blueviolet;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.gallery img {
+    width: 80%;
+    border: 1px solid black;
+    justify-self: center;
+}
+.gallery img:last-child {
+    grid-column: 1/3;
 }
